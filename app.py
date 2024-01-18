@@ -156,13 +156,11 @@ def getRevelantSentences(origin_query, most_freq, documents, ratings, top=5, use
 
 def main(origin_query, bm25=bm25, documents=documents, ratings=ratings, spell=spell, use_bm25 = True, use_pipe = True):
     query = text2Token(origin_query)
+    top_docs = []
+    most_freq = []
     if use_bm25:
         top_docs = getTopDocs(bm25, query, documents, ratings, top=5)
-    most_freq = getMostFrequentWords([doc[0] for doc in top_docs], top=50)
-    """  Not used
-    relevants = getRevelantWords(most_freq, pos_nb = 5, neg_nb = 5)
-    """
-
+        most_freq = getMostFrequentWords([doc[0] for doc in top_docs], top=50)
     pos_list, neg_list = getRevelantSentences(origin_query, most_freq, documents, ratings, top=5, use_bm25 = True, use_pipe = True)
     if not use_pipe:
         origin_query = None
