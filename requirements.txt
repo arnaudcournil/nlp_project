@@ -62,6 +62,7 @@ rpds-py==0.17.1
 safetensors==0.4.1
 scikit-learn==1.4.0
 scipy==1.11.4
+sentencepiece==0.1.99
 silpa-common==0.3
 six==1.16.0
 smmap==5.0.1
