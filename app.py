@@ -10,6 +10,8 @@ import ast
 from transformers import pipeline
 from rank_bm25 import BM25Okapi
 import streamlit as st
+import pickle
+import numpy as np
 
 nltk.download('stopwords')
 nltk.download('punkt')
@@ -34,6 +36,10 @@ bm25 = BM25Okapi(documents)
 STEMMER = FrenchStemmer()
 spell = SpellChecker(language='fr')
 pipe = pipeline("text-classification", model="tblard/tf-allocine")
+
+BOTH_MODEL = pickle.load(open("both_model.pkl", "rb"))
+PIPE_MODEL = pickle.load(open("pipe_model.pkl", "rb"))
+BM25_MODEL = pickle.load(open("bm25_model.pkl", "rb"))
 
 def preprocess_text(text):
     # Suppression des accents
@@ -116,20 +122,18 @@ def separer_phrase(phrase):
 
 def estimate_score(top_docs, origin_query = None, use_bm25 = True, FIABILITY_THRESHOLD = 0.6):
     # Calculer la note moyenne des avis
-    stars_bm25 = None
-    if use_bm25:
-        stars_bm25 = sum([int(doc[2]) for doc in top_docs]) / len(top_docs)
-        if origin_query is None:
-            return stars_bm25
-    try:
-        score_pipe = pipe(origin_query)
-        stars_pipe = 2.5 + 2.5 * FIABILITY_THRESHOLD if score_pipe[0]["label"] == "POSITIVE" else (2.5 - 2.5 * FIABILITY_THRESHOLD if score_pipe[0]["label"] == "NEGATIVE" else 2.5)
-        if use_bm25:
-            return (stars_bm25 + stars_pipe) / 2
-        else:
-            return stars_pipe
-    except:
-        return stars_bm25
+    if use_bm25 and origin_query is None:
+        return BM25_MODEL.predict(np.array([top_docs[i][2] for i in range(len(top_docs))] + [top_docs[i][1] for i in range(len(top_docs))]).reshape(1, -1))
+    elif not use_bm25:
+        pipe_res = pipe(origin_query)[0]
+        return PIPE_MODEL.predict(np.array([pipe_res["score"], 1 if pipe_res["label"] == "POSITIVE" else 0]).reshape(1, -1))
+    else:
+            pipe_res = pipe(origin_query)[0]
+            pipe_score = pipe_res["score"]
+            pipe_label = 1 if pipe_res["label"] == "POSITIVE" else 0
+            bm25_ratings = [top_docs[i][2] for i in range(len(top_docs))]
+            bm25_scores = [top_docs[i][1] for i in range(len(top_docs))]
+            return BOTH_MODEL.predict(np.array([pipe_score, pipe_label] + bm25_ratings + bm25_scores).reshape(1, -1))
     
 def getRevelantSentences(origin_query, most_freq, documents, ratings, top=5, use_bm25 = True, use_pipe = True):
 
@@ -213,7 +217,7 @@ def afficher_resultats(resultats):
         st.write(f"👎 {phrase}")
 
 def run():
-    st.title("Analyse d'avis Internet")
+    st.title("Analyse de sentiments pour des avis de concessionnaires automobiles")
 
     avis_utilisateur = st.text_area("Entrez votre avis ici :")
 
