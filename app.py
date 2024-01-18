@@ -124,7 +124,10 @@ def estimate_score(top_docs, origin_query = None, use_bm25 = True, FIABILITY_THR
     try:
         score_pipe = pipe(origin_query)
         stars_pipe = 2.5 + 2.5 * FIABILITY_THRESHOLD if score_pipe[0]["label"] == "POSITIVE" else (2.5 - 2.5 * FIABILITY_THRESHOLD if score_pipe[0]["label"] == "NEGATIVE" else 2.5)
-        return (stars_bm25 + stars_pipe) / 2
+        if use_bm25:
+            return (stars_bm25 + stars_pipe) / 2
+        else:
+            return stars_pipe
     except:
         return stars_bm25
     
@@ -197,6 +200,7 @@ def prediction_3(origin_query):
         "liste phrases positives": pos_list,
         "liste phrases négatives": neg_list
     }
+
 
 def afficher_resultats(resultats):
     st.subheader("Résultats de la prédiction :")
