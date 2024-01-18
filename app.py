@@ -4,11 +4,15 @@ import re
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem.snowball import FrenchStemmer
+import nltk
 from unidecode import unidecode
 import ast
 from transformers import pipeline
 from rank_bm25 import BM25Okapi
 import streamlit as st
+
+nltk.download('stopwords')
+nltk.download('punkt')
 
 
 try:
@@ -196,7 +200,7 @@ def prediction_3(origin_query):
 
 def afficher_resultats(resultats):
     st.subheader("Résultats de la prédiction :")
-    st.write(f"Nombre d'étoiles sur 5 : {'🌟' * resultats['nombre d étoile sur 5']}")
+    st.write(f"Nombre d'étoiles sur 5 : {'🌟' * round(resultats['nombre d étoile sur 5'])}")
     st.subheader("Liste de phrases positives :")
     for phrase in resultats["liste phrases positives"]:
         st.write(f"👍 {phrase}")
