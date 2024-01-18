@@ -70,7 +70,7 @@ soupsieve==2.5
 stack-data==0.6.3
 streamlit==1.30.0
 tenacity==8.2.3
-tensorflow==2.16.0
+tensorflow==2.15.0
 threadpoolctl==3.2.0
 tokenizers==0.15.0
 toml==0.10.2
