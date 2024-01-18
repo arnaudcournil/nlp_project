@@ -182,7 +182,10 @@ Streamlit
 """
 
 def prediction_1(origin_query):
-    score, pos_list, neg_list = main(origin_query, use_pipe=False)
+    try:
+        score, pos_list, neg_list = main(origin_query, use_pipe=False)
+    except:
+        score, pos_list, neg_list = 0, [], []
     return {
         "nombre d étoile sur 5": score,
         "liste phrases positives": pos_list,
@@ -190,7 +193,10 @@ def prediction_1(origin_query):
     }
 
 def prediction_2(origin_query):
-    score, pos_list, neg_list = main(origin_query, use_bm25=False)
+    try:
+        score, pos_list, neg_list = main(origin_query, use_bm25=False)
+    except:
+        score, pos_list, neg_list = 0, [], []
     return {
         "nombre d étoile sur 5": score,
         "liste phrases positives": pos_list,
@@ -198,7 +204,10 @@ def prediction_2(origin_query):
     }
 
 def prediction_3(origin_query):
-    score, pos_list, neg_list = main(origin_query)
+    try:
+        score, pos_list, neg_list = main(origin_query)
+    except:
+        score, pos_list, neg_list = 0, [], []
     return {
         "nombre d étoile sur 5": score,
         "liste phrases positives": pos_list,
@@ -207,6 +216,9 @@ def prediction_3(origin_query):
 
 
 def afficher_resultats(resultats):
+    if resultats["nombre d étoile sur 5"] == 0:
+        st.write("La prédiction n'a pas pu être effectuée.")
+        return None
     st.subheader("Résultats de la prédiction :")
     st.write(f"Nombre d'étoiles sur 5 : {'🌟' * round(resultats['nombre d étoile sur 5'])}")
     st.subheader("Liste de phrases positives :")
