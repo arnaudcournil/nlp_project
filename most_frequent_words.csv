@@ -1,0 +1,1001 @@
+word,count,en,sentiment
+tres,12626,Very,POSITIVE
+vehicule,8204,Vehicle,MIXED
+voiture,4936,Car,POSITIVE
+livraison,4556,Delivery,MIXED
+bien,4415,Well,MIXED
+ete,4276,Summer,MIXED
+tout,3675,All,MIXED
+achat,3373,Purchase,POSITIVE
+merci,3132,Thank you.,POSITIVE
+accueil,3090,Welcome,POSITIVE
+bon,2990,Good,POSITIVE
+recommande,2899,Recommended,MIXED
+plus,2678,More,MIXED
+service,2561,Service,NEGATIVE
+ecoute,2084,Listen,MIXED
+fait,1996,Made,MIXED
+experience,1972,Experience,MIXED
+commande,1962,Command,MIXED
+etait,1946,Was,POSITIVE
+bonne,1920,Good,POSITIVE
+apres,1902,After,NEGATIVE
+rapide,1881,Fast,MIXED
+equipe,1765,Team,MIXED
+sans,1747,Without,MIXED
+tres bon,1744,Very good,POSITIVE
+chez,1684,At,MIXED
+tres bien,1640,Very well,POSITIVE
+site,1568,Website,MIXED
+commercial,1489,Commercial,NEGATIVE
+satisfait,1434,Satisfied,POSITIVE
+meme,1417,Even,MIXED
+faire,1343,Do,MIXED
+toujours,1324,Always,MIXED
+rien,1304,Nothing,NEGATIVE
+avoir,1284,Have,POSITIVE
+recu,1281,Received,POSITIVE
+client,1251,Client,NEGATIVE
+prix,1198,Price,MIXED
+bon accueil,1183,Good Reception,POSITIVE
+professionnel,1176,Professional,MIXED
+temps,1160,Time,NEGATIVE
+cette,1160,This,MIXED
+suivi,1125,Follow-up,POSITIVE
+conforme,1120,Compliant,POSITIVE
+parfait,1097,Perfect,POSITIVE
+personnel,1057,Staff,NEGATIVE
+car,1052,Because,MIXED
+carte,1049,Map,MIXED
+professionnalisme,1041,Professionalism,MIXED
+comme,1034,Like,MIXED
+donc,1014,So,POSITIVE
+vente,1005,Sales,POSITIVE
+top,1004,Top,POSITIVE
+passe,1002,Pass,MIXED
+probleme,996,Problem,NEGATIVE
+livre,993,Book,POSITIVE
+prise,976,Take,MIXED
+mois,973,Month,MIXED
+dossier,965,File,NEGATIVE
+auto,957,Auto,MIXED
+jours,944,Days,MIXED
+achete,935,Purchased,MIXED
+etre,932,Be,MIXED
+renaît,932,Reborn,POSITIVE
+grise,928,Grey,MIXED
+tres bonne,919,Very good,POSITIVE
+super,917,Great,POSITIVE
+carte grise,915,Registration,MIXED
+tous,910,All,POSITIVE
+efficace,901,Effective,POSITIVE
+avant,887,Before,MIXED
+autour,877,Around,MIXED
+demande,873,Request,MIXED
+toute,864,All,MIXED
+vendeur,854,Seller,MIXED
+fois,847,Times,MIXED
+tres bon accueil,846,Very good reception,POSITIVE
+avais,841,I have not,MIXED
+charge,814,Load,MIXED
+qualité,804,Quality,POSITIVE
+garage,794,Garage,MIXED
+toutes,790,All,POSITIVE
+serieux,788,Serious,MIXED
+lors,786,At,MIXED
+conseiller,777,Counsellor,MIXED
+pris,773,Taken,MIXED
+reprise,772,Recovery,MIXED
+agréable,770,Nice,POSITIVE
+peu,745,Little,NEGATIVE
+sympathique,743,Nice,POSITIVE
+ete tres,741,Summer very,POSITIVE
+tres satisfait,740,Very satisfied,POSITIVE
+encore,737,Again,NEGATIVE
+vraiment,735,Really,POSITIVE
+contact,723,Contact,MIXED
+acheter,719,Buy,POSITIVE
+devais,719,Had to,MIXED
+dire,715,Say,NEGATIVE
+excellent,711,Excellent,POSITIVE
+disponible,707,Available,POSITIVE
+jusqu,698,Up to,MIXED
+rapidement,696,Quickly,NEGATIVE
+explications,694,Explanation,MIXED
+jour,690,Day,MIXED
+personne,680,No one,NEGATIVE
+conseils,672,Advice,POSITIVE
+eur,666,EUR,MIXED
+reception,665,Receipt,MIXED
+cela,664,This,MIXED
+grand,657,big,POSITIVE
+suite,657,Continued,NEGATIVE
+non,656,No,NEGATIVE
+aussi,654,Also,MIXED
+concession,644,Concession,MIXED
+questions,640,Questions,MIXED
+délai,639,Time limit,NEGATIVE
+livreur,635,Delivery boy,NEGATIVE
+vivement,634,I can't wait.,POSITIVE
+telephone,627,Telephone,MIXED
+premiere,625,First,MIXED
+bonne experience,622,Good experience,POSITIVE
+depuis,613,Since,MIXED
+aucun,613,,NEGATIVE
+part,607,Share,MIXED
+satisfaite,600,Satisfied,POSITIVE
+tres professionnel,595,Very professional,POSITIVE
+beaucoup,588,A lot,POSITIVE
+carnet,582,Notebook,POSITIVE
+bien passe,558,Have a good time.,POSITIVE
+achat vehicule,557,Purchase of vehicle,MIXED
+choix,554,Choice,NEGATIVE
+véhicules,550,Vehicles,NEGATIVE
+debut,546,Start,NEGATIVE
+attentes,544,Expectations,MIXED
+alors,543,So...,MIXED
+bonjour,535,Good morning.,POSITIVE
+annonce,534,Announcement,NEGATIVE
+etat,529,State,MIXED
+quand,529,When,MIXED
+reponse,518,Answer,NEGATIVE
+occasion,518,Opportunity,MIXED
+recommande vivement,513,Highly recommended,POSITIVE
+garantie,510,Guarantee,MIXED
+malgre,506,Despite,NEGATIVE
+main,497,Hand,POSITIVE
+aucune,489,,NEGATIVE
+date,484,Date,NEGATIVE
+fin,483,End,NEGATIVE
+réactif,481,Reagent,MIXED
+livraison vehicule,481,Vehicle delivery,MIXED
+autre,480,Other,NEGATIVE
+toute equipe,480,Any team,MIXED
+trouve,480,Find,MIXED
+nouvelle,473,News,MIXED
+ligne,472,Line,MIXED
+petit,468,Small,NEGATIVE
+confiance,466,Trust,POSITIVE
+surtout,461,Especially,NEGATIVE
+nouveau,456,New,MIXED
+moins,455,Less,NEGATIVE
+premier,454,1st,MIXED
+internet,447,Internet,MIXED
+simple,445,Simple,MIXED
+surprise,444,Surprise,MIXED
+deux,444,Two,NEGATIVE
+mail,444,Mail,MIXED
+voir,441,See,POSITIVE
+tres bonne experience,438,Very good experience,POSITIVE
+conseille,438,Advise,MIXED
+dit,433,Says,MIXED
+attente,429,Waiting,NEGATIVE
+service client,429,Customer service,MIXED
+ans,429,Years,MIXED
+parfaitement,420,Perfectly.,POSITIVE
+ainsi,416,So,MIXED
+peut,413,May,NEGATIVE
+bravo,413,Bravo.,POSITIVE
+démarches,412,Approaches,MIXED
+quelques,408,Some,NEGATIVE
+avis,408,Opinion,POSITIVE
+disponibilité,407,Availability,MIXED
+agence,407,Agency,MIXED
+sa,401,Its,MIXED
+clients,397,Customers,MIXED
+rapidité,395,Speed,POSITIVE
+long,394,Long,NEGATIVE
+domicile,393,Home,MIXED
+grand merci,388,Thank you very much.,POSITIVE
+services,387,Services,MIXED
+moment,386,Moment,MIXED
+documents,386,Documents,MIXED
+remise,381,Discount,MIXED
+professionnelle,379,Vocational training,MIXED
+seul,376,Alone,MIXED
+semaine,373,Week,NEGATIVE
+content,372,Happy,POSITIVE
+heure,371,Time,MIXED
+produit,367,Product,NEGATIVE
+rien dire,366,Say nothing,NEGATIVE
+egalement,366,Also,MIXED
+semaines,366,Weeks,MIXED
+activite,365,Activity,NEGATIVE
+prise charge,365,Support,MIXED
+conseil,365,Council,MIXED
+tres satisfaite,362,Very satisfied,POSITIVE
+facile,361,Easy,POSITIVE
+juste,357,Just,MIXED
+personnes,355,Persons,NEGATIVE
+commerciale,354,Commercial,MIXED
+repondre,352,Answer,MIXED
+euros,352,Euro,MIXED
+monsieur,352,Sir.,MIXED
+preuve,350,Evidence,MIXED
+impeccable,348,Impeccable,POSITIVE
+entre,348,Come in.,MIXED
+plusieurs,347,Several,MIXED
+bons,345,Good,POSITIVE
+propose,340,Proposed,MIXED
+pro,337,Pro,MIXED
+recommander,335,Recommend,POSITIVE
+jamais,334,Never.,MIXED
+sympa,333,Nice.,POSITIVE
+tres agréable,333,Very nice,POSITIVE
+compte,328,Account,MIXED
+description,327,Description:,NEGATIVE
+tres sympathique,327,Very nice.,POSITIVE
+entreprise,325,Company,NEGATIVE
+redire,324,Say again,MIXED
+frais,323,Cost,MIXED
+explique,321,Explain,MIXED
+comptent,321,Count,MIXED
+soucis,320,Worries,NEGATIVE
+prevu,320,Anticipated,MIXED
+rdv,320,Date,MIXED
+gentillesse,317,Kindness,POSITIVE
+professionnels,317,Professional,MIXED
+cas,315,Case,MIXED
+deja,315,Already,MIXED
+mandataire,315,Authorised representative,MIXED
+societe,314,Company,NEGATIVE
+tout bien,313,All right.,POSITIVE
+niveau,313,Level,NEGATIVE
+rapport,313,Report,MIXED
+tres bien passe,312,"All right, go ahead.",POSITIVE
+point,312,Point,NEGATIVE
+faite,311,Done,MIXED
+appel,311,Appeal,MIXED
+déroule,311,Unfold,MIXED
+rendez,310,Return,MIXED
+retard,309,Delay,NEGATIVE
+remercie,309,Thank you,MIXED
+propre,305,Clean,MIXED
+trop,305,Too much,NEGATIVE
+efficacité,305,Effectiveness,MIXED
+mise,303,Bet,MIXED
+prise main,302,Handheld,POSITIVE
+reste,301,Stay.,NEGATIVE
+aimable,301,Kind.,MIXED
+photos,300,Photos,MIXED
+rien redire,299,No reproach.,NEGATIVE
+excellente,295,Excellent,POSITIVE
+vehicule ete,294,Summer vehicle,MIXED
+tout tres,291,Everything very,POSITIVE
+accompagnement,291,Accompaniment,MIXED
+concernant,290,Concerning,MIXED
+neuf,284,New,MIXED
+donne,283,Give me,POSITIVE
+livraison rapide,283,Fast delivery,POSITIVE
+faut,282,You have to.,MIXED
+travail,281,Work,POSITIVE
+belle,280,Beautiful,POSITIVE
+prestation,278,Service,NEGATIVE
+correspond,277,Match,MIXED
+accueil tres,277,Welcome,POSITIVE
+etais,274,Were,MIXED
+informations,274,Information,MIXED
+autres,274,Other,NEGATIVE
+devis,274,Estimate,NEGATIVE
+leurs,273,Their,NEGATIVE
+sous,272,Under,MIXED
+transaction,270,Transaction,MIXED
+repondu,269,Answer,MIXED
+apres vente,269,After sale,NEGATIVE
+besoin,268,Need,MIXED
+tout tres bien,267,All right.,POSITIVE
+prendre,266,Take,MIXED
+respecte,265,Respect,POSITIVE
+achat voiture,265,Purchase car,MIXED
+vehicule conforme,264,Compliant vehicle,POSITIVE
+arrive,264,Is coming.,MIXED
+peuvent,261,May,NEGATIVE
+personnel tres,259,Staff,POSITIVE
+claires,259,Clear,MIXED
+bref,258,"In short,",NEGATIVE
+remboursement,257,Reimbursement,NEGATIVE
+rapide efficace,257,Fast and effective,POSITIVE
+puis,255,Then,MIXED
+tres rapide,255,Very fast,POSITIVE
+mieux,255,Better,MIXED
+parfaite,255,Perfect.,POSITIVE
+mafia,255,Mafia,MIXED
+fortement,254,Strongly,NEGATIVE
+commande livraison,254,Delivery order,POSITIVE
+tres content,253,Very happy.,POSITIVE
+ancien,253,Former,NEGATIVE
+vehicule tres,252,Very vehicle,POSITIVE
+jusqu livraison,251,Until delivery,MIXED
+bout,251,End,NEGATIVE
+cordialement,249,"Sincerely,",MIXED
+ete livre,248,Summer book,POSITIVE
+etaient,248,Were,MIXED
+ensemble,247,Together,MIXED
+entretien,245,Maintenance,MIXED
+immatriculation,244,Registration,MIXED
+problemes,244,Problems,NEGATIVE
+trouver,243,Find,MIXED
+contre,242,Against,MIXED
+expliquer,242,Explain,MIXED
+bémol,242,Flat,NEGATIVE
+avais auto,242,Had car,MIXED
+changer,240,Change,POSITIVE
+bien recu,238,Copy that.,POSITIVE
+chaque,237,Each,MIXED
+voitures,237,Cars,NEGATIVE
+service commercial,236,Commercial Service,MIXED
+bons conseils,236,Good advice,POSITIVE
+tout ete,235,♪ everything's been ♪,MIXED
+grande,235,Large,POSITIVE
+présentation,234,Presentation,NEGATIVE
+dommage,233,Too bad.,NEGATIVE
+geste,232,Gesture,NEGATIVE
+téléphonique,231,Telephone,NEGATIVE
+manque,231,Missing,NEGATIVE
+controle,228,Control,MIXED
+satisfaction,227,Satisfaction,POSITIVE
+contente,226,I'm glad.,POSITIVE
+particulier,224,Special,MIXED
+mauvaise,224,Bad,NEGATIVE
+pendant,223,During,NEGATIVE
+options,222,Options,NEGATIVE
+apres avoir,221,After,NEGATIVE
+reception vehicule,219,Vehicle reception,MIXED
+paiement,219,Payment,MIXED
+tres réactif,218,Very reactive,POSITIVE
+essai,218,Test,NEGATIVE
+tres professionnelle,218,Very professional,POSITIVE
+réponses,217,Replies,MIXED
+enfin,217,Finally.,MIXED
+arrivee,216,Arrival,POSITIVE
+clair,216,Clear,POSITIVE
+demandes,215,Applications,MIXED
+vite,214,Hurry up.,NEGATIVE
+recherche,214,Research,MIXED
+merci toute,213,Thank you all,POSITIVE
+retour,213,Back,POSITIVE
+tard,212,Late,NEGATIVE
+effectuer,212,Perform,MIXED
+aller,212,Go,NEGATIVE
+nouveau vehicule,211,New vehicle,MIXED
+changes,210,Exchange rates,MIXED
+savoir,210,Know,POSITIVE
+tres ecoute,209,Very listening,POSITIVE
+technique,209,Technical,MIXED
+service apres,209,Service after,MIXED
+effectue,208,Does,MIXED
+réparation,207,Repair,NEGATIVE
+acquisition,207,Acquisition,MIXED
+particulierement,207,In particular,POSITIVE
+toutes questions,205,All questions,MIXED
+merci toute equipe,205,"Thank you, team",POSITIVE
+communication,205,Communication,NEGATIVE
+fonctionnement,204,Operation,MIXED
+finalement,203,Finally,NEGATIVE
+service apres vente,203,After-sales service,NEGATIVE
+repond,203,Answer,NEGATIVE
+concessionnaire,203,Concessionaire,MIXED
+ete tres bien,203,Great summer.,POSITIVE
+suivi dossier,202,Follow-up file,MIXED
+experience achat,201,Purchasing experience,MIXED
+tant,201,So much,MIXED
+panne,201,Failure,NEGATIVE
+tout fait,199,All done,POSITIVE
+indique,198,Indicates,MIXED
+tout long,197,All along,NEGATIVE
+neuve,197,New,POSITIVE
+tres pro,196,Very professional,POSITIVE
+mis,196,Set,MIXED
+apprecie,196,Appreciate it.,POSITIVE
+cet,196,This,MIXED
+passer,196,Pass,NEGATIVE
+bon suivi,195,Good follow-up,POSITIVE
+vendu,194,Sold,NEGATIVE
+payer,194,Pay,MIXED
+démarche,194,Approach,NEGATIVE
+final,194,Final,NEGATIVE
+etant,193,Being,MIXED
+chaleureux,192,Warm,POSITIVE
+estimation,192,Estimate,MIXED
+contacte,191,Contact,MIXED
+délai livraison,191,Delivery time,NEGATIVE
+peux,191,Can,NEGATIVE
+conforme description,191,According to description,POSITIVE
+celui,191,This,MIXED
+virement,191,Transfer,MIXED
+ancien vehicule,191,Old vehicle,NEGATIVE
+equipe tres,191,Team,POSITIVE
+papiers,190,Papers,NEGATIVE
+ecoute client,190,Listen to customer,MIXED
+eme,190,Eme,MIXED
+accompagne,189,Accompanies,MIXED
+nouvelle voiture,189,New car,MIXED
+plaisir,189,Pleasure,POSITIVE
+recuperer,188,Collect,MIXED
+place,188,Place,MIXED
+plus tard,187,Later,MIXED
+acheter voiture,187,Buy car,MIXED
+points,187,Points,MIXED
+ensuite,186,Then,MIXED
+deuxieme,186,Second,NEGATIVE
+excellent accueil,186,Excellent reception,POSITIVE
+conseillers,185,Advisers,MIXED
+dont,184,Of which,MIXED
+pris charge,184,Taken care of,NEGATIVE
+robin,184,Robin.,POSITIVE
+etait tres,183,Was very,POSITIVE
+debut fin,183,Start end,NEGATIVE
+serieuse,183,Serious,NEGATIVE
+coup,183,Blow,MIXED
+bonnes,182,Good,POSITIVE
+avance,182,Move forward.,MIXED
+assez,182,Enough.,NEGATIVE
+défaut,182,Default,NEGATIVE
+modele,181,Model,MIXED
+modeler,181,Model,MIXED
+premiere experience,180,First experiment,MIXED
+vehicule livre,180,Book vehicle,MIXED
+paye,180,Pay,MIXED
+contrat,180,Contract,MIXED
+explication,179,Explanation,MIXED
+pneus,179,Tyres,NEGATIVE
+envoi,179,Shipping,MIXED
+attention,178,Be careful.,POSITIVE
+maintenant,178,Now,MIXED
+pret,178,Ready,MIXED
+etoiles,178,Stars,MIXED
+lors livraison,177,On delivery,MIXED
+mails,177,Emails,NEGATIVE
+descriptif,176,Description,NEGATIVE
+tres rapidement,176,Very quickly,POSITIVE
+geste commercial,176,Commercial gesture,NEGATIVE
+lorsque,176,When,MIXED
+processus,175,Process,MIXED
+satisfaits,175,Satisfied,POSITIVE
+administratif,174,Administrative,MIXED
+recommande fortement,173,Highly recommended,POSITIVE
+souci,173,Concern,NEGATIVE
+sinon,173,Otherwise,NEGATIVE
+financement,172,Financing,MIXED
+voiture ete,172,Summer car,MIXED
+interlocuteur,172,Contact person,NEGATIVE
+interlocuteurs,171,Interlocutors,MIXED
+moteur,171,Engine,MIXED
+hui,171,.,MIXED
+vers,171,Towards,MIXED
+achete vehicule,170,Purchase vehicle,MIXED
+utilisation,170,Use,MIXED
+autour hui,170,Around Hui,MIXED
+accueilli,170,Welcome,MIXED
+offre,169,Offer,MIXED
+tout bien passe,168,Everything's fine.,POSITIVE
+correct,167,Correct.,MIXED
+recevoir,166,Receive,MIXED
+possible,166,Possible,POSITIVE
+camion,165,Truck,NEGATIVE
+cote,165,Symbol,MIXED
+donner,164,Give,POSITIVE
+responsable,164,Responsible,NEGATIVE
+affaire,164,Case,MIXED
+facture,164,Invoice,MIXED
+yeux,163,Eyes,POSITIVE
+vehicule etait,163,Vehicle was,MIXED
+vais,163,Go,NEGATIVE
+ecoute tres,162,Listen very,POSITIVE
+entierement,162,All of it.,POSITIVE
+vrai,162,True,MIXED
+besoins,162,Needs,NEGATIVE
+bon service,162,Good service,POSITIVE
+pense,162,Think,MIXED
+afin,161,In order to,MIXED
+passee,160,Past,NEGATIVE
+accueillant,160,Welcoming,MIXED
+tout etait,160,Everything was,NEGATIVE
+livraison ete,160,Delivery and,MIXED
+premier achat,160,First purchase,MIXED
+clin,160,Clin,POSITIVE
+ravie,159,Nice to meet you.,POSITIVE
+impossible,159,Impossible.,NEGATIVE
+mal,159,Wrong,NEGATIVE
+dernier,159,Last,MIXED
+livraison domicile,158,Home delivery,MIXED
+cher,158,Dear,POSITIVE
+partie,158,Party,NEGATIVE
+vendre,158,Sell,MIXED
+pris temps,157,Took time,MIXED
+ailleurs,157,Elsewhere,MIXED
+aupres,157,Apres,MIXED
+respectes,157,Respect,POSITIVE
+voiture tres,156,Car very,POSITIVE
+achete voiture,156,Buy car,MIXED
+reprise vehicule,156,Vehicle resumption,MIXED
+bon conseil,156,Good advice,POSITIVE
+solution,156,Solution,NEGATIVE
+recommandons,155,Recommend,POSITIVE
+fais,155,Do it.,MIXED
+défauts,155,Defects,NEGATIVE
+chose,155,...,NEGATIVE
+envoye,155,Let's go.,MIXED
+bon contact,154,Good contact,POSITIVE
+totalement,154,Totally,MIXED
+obtenir,154,Get,POSITIVE
+vehicule neuf,154,New vehicle,POSITIVE
+genre,153,Like,NEGATIVE
+aide,152,Help,MIXED
+nickel,152,Nickel,POSITIVE
+erreur,152,Error,NEGATIVE
+vehicule occasion,152,Used vehicle,MIXED
+satisfait achat,152,Satisfied purchase,POSITIVE
+mettre,152,Set,MIXED
+tapis,152,Carpets,MIXED
+livraison voiture,151,Delivery car,MIXED
+respect,151,Respect,POSITIVE
+intérieur,151,Inside,MIXED
+echange,151,Exchange,MIXED
+carrosserie,151,Bodywork,MIXED
+via,150,Via,MIXED
+reprise ancien,150,Old recovery,NEGATIVE
+commerciaux,150,Sales,MIXED
+mme,150,Ms.,MIXED
+cles,149,Key,MIXED
+aucun probleme,149,No problem.,MIXED
+plutot,148,Pretty much.,NEGATIVE
+recule,147,Step back.,NEGATIVE
+main vehicule,147,Vehicle hand,MIXED
+automobiles,147,Motor vehicles,MIXED
+jours apres,146,Days after,MIXED
+livraison tres,146,Delivery very,POSITIVE
+hero,146,Hero.,POSITIVE
+occupe,146,Occupied,MIXED
+differents,146,Different,POSITIVE
+lieu,146,Location,NEGATIVE
+attends,146,Wait.,NEGATIVE
+presente,145,Present,MIXED
+choisi,145,Selected,MIXED
+grace,145,Grace.,POSITIVE
+renseignements,145,"For more information, please contact:",MIXED
+automobile,145,Motor vehicle,MIXED
+chez renaît,145,At Reborn,POSITIVE
+bien déroule,144,Well done.,POSITIVE
+auto hero,143,Car hero,POSITIVE
+vehicule chez,143,Vehicle,MIXED
+voiture etait,143,Car was,MIXED
+peut etre,143,Maybe.,MIXED
+information,142,Information,NEGATIVE
+vehicule achete,142,Vehicle purchased,MIXED
+relation,141,Relationship,POSITIVE
+attendre,140,Wait,NEGATIVE
+encore merci,140,Thank you again.,POSITIVE
+viens,139,Come on.,MIXED
+regrette,139,Sorry.,NEGATIVE
+chez avais,139,At Avette,MIXED
+tres contente,138,Very happy.,POSITIVE
+conditions,138,Conditions,MIXED
+arriere,138,Back,MIXED
+route,138,Road,NEGATIVE
+conforme attentes,137,Meeting expectations,POSITIVE
+tres serieux,137,Very serious,POSITIVE
+essayer,137,Try,MIXED
+appelle,137,Call.,MIXED
+question,136,Question,NEGATIVE
+procedure,136,Procedure,MIXED
+reserve,136,Reserve,MIXED
+dois,136,Must,MIXED
+juillet,136,July,MIXED
+demander,136,Ask,MIXED
+depart,135,Departure,NEGATIVE
+premiere fois,135,First time,MIXED
+précise,135,Specify,MIXED
+pieces,135,Parts,MIXED
+proposition,135,Proposal,NEGATIVE
+realise,135,Realize,MIXED
+ere,135,Ere,MIXED
+etc,135,Et seq.,MIXED
+assurance,135,Insurance,MIXED
+laisse,135,Leave it alone.,NEGATIVE
+boite,134,Box,MIXED
+tres sympa,133,Very nice.,POSITIVE
+prochaine,133,Next,MIXED
+patience,133,Patience,NEGATIVE
+envoyer,133,Send,MIXED
+amabilité,133,Friendliness,MIXED
+franchement,132,Honestly.,NEGATIVE
+tiens,132,Here you go.,MIXED
+hésiter,132,Hesitating,NEGATIVE
+changement,132,Change,MIXED
+date livraison,132,Delivery date,MIXED
+acheter vehicule,132,Buy vehicle,MIXED
+visite,132,Visit,POSITIVE
+marque,132,Make,MIXED
+fermes,131,Farms,MIXED
+ete parfait,131,Perfect summer,POSITIVE
+compétence,131,Competence,MIXED
+adresse,131,Address,NEGATIVE
+achat chez,130,Purchase from,MIXED
+voiture conforme,130,Compliant car,POSITIVE
+present,130,Present,MIXED
+autant,129,As much as,NEGATIVE
+change,129,Exchange,MIXED
+prend,129,Take,MIXED
+sans probleme,129,No problem.,POSITIVE
+expertise,129,Expertise,MIXED
+mars,129,March,MIXED
+yeux fermes,128,Firm eyes,POSITIVE
+livreur tres,128,Delivery man very,POSITIVE
+remercier,128,Thank you,MIXED
+experience tres,128,Experience,POSITIVE
+merci encore,128,Thank you again.,POSITIVE
+reprise ancien vehicule,128,Old vehicle take-over,MIXED
+lendemain,128,Next,NEGATIVE
+sylvie,128,Sylvie.,MIXED
+petite,127,Small,NEGATIVE
+absolument,127,Absolutely.,POSITIVE
+tres bons,127,Very good,POSITIVE
+note,126,note,MIXED
+réclamation,126,Claim,NEGATIVE
+heures,126,Hours,MIXED
+hauteur,126,Height,MIXED
+journee,126,Day,NEGATIVE
+cette concession,126,This concession,MIXED
+réparations,125,Repairs,NEGATIVE
+tres aimable,124,Very kind.,POSITIVE
+tres bien recu,124,Very well received.,POSITIVE
+argent,123,Money,MIXED
+traitement,123,Treatment,MIXED
+disant,123,Saying,MIXED
+prochain,122,Next,MIXED
+equipes,122,Teams,NEGATIVE
+pourtant,122,Yet,MIXED
+sauf,122,Except,NEGATIVE
+révision,122,Revision,MIXED
+gentil,121,Nice.,MIXED
+rembourse,121,Refund,NEGATIVE
+fonctionne,121,Works,MIXED
+capturé,121,Captured,MIXED
+vendeur tres,121,Seller very,POSITIVE
+vendeurs,120,Vendors,MIXED
+bien accueilli,120,Welcome,POSITIVE
+pouvoir,120,Power,POSITIVE
+claire,119,Claire.,MIXED
+etes,119,EES,POSITIVE
+septembre,119,September,MIXED
+doit,119,Must,MIXED
+prise main vehicule,119,Vehicle handhold,MIXED
+differentes,118,Different,POSITIVE
+courtois,118,Courteous,MIXED
+etait parfait,118,Was perfect,POSITIVE
+complet,118,Complete,POSITIVE
+quoi,118,What?,NEGATIVE
+line,118,Line,MIXED
+maures,118,Moors,MIXED
+aout,117,August,MIXED
+tres efficace,117,Very effective,POSITIVE
+chez autour,117,Around,MIXED
+décembre,116,December,MIXED
+sans hésiter,116,Without hesitation,POSITIVE
+tres bon service,116,Very good service,POSITIVE
+réactive,116,Reactive,MIXED
+juin,116,June,MIXED
+ravis,116,Nice to meet you.,POSITIVE
+chercher,116,Search,NEGATIVE
+jean,115,John.,MIXED
+derniere,115,Last,NEGATIVE
+exactement,115,Exactly.,MIXED
+recommande sans,115,Recommended without,POSITIVE
+bientot,115,Soon.,MIXED
+kms,115,Km,MIXED
+font,115,Do,MIXED
+marche,115,Walk,NEGATIVE
+prestations,115,Benefits,NEGATIVE
+atelier,115,Workshop,MIXED
+necessaire,115,Necessary,MIXED
+administratives,115,Administrative,MIXED
+celle,115,This,MIXED
+mauvaise surprise,114,Bad surprise.,NEGATIVE
+rassurant,114,Reassuring,MIXED
+voiture livre,114,Car delivered,POSITIVE
+voiture chez,114,Car at home,MIXED
+regle,114,Rule,MIXED
+expert,113,Expert,MIXED
+extremement,112,Extremely,POSITIVE
+contacts,112,Contacts,MIXED
+merci beaucoup,112,Thank you so much.,POSITIVE
+petits,112,Small,NEGATIVE
+espere,112,Hope.,POSITIVE
+porte,112,Door,MIXED
+puisque,112,Since,MIXED
+devais livraison,111,Had to deliver,MIXED
+pratique,111,Practice,MIXED
+rapides,111,Fast,MIXED
+conforme commande,111,Correct order,POSITIVE
+ete bien,111,Summer's good.,POSITIVE
+pose,111,Pose,MIXED
+explications claires,111,Clear explanations,POSITIVE
+buster,111,Buster,MIXED
+compétente,110,Competent,MIXED
+france,110,France,MIXED
+satisfaite achat,110,Satisfied purchase,POSITIVE
+seulement,110,Only,MIXED
+février,110,February,MIXED
+rappelle,110,Call back.,MIXED
+appele,110,Call,NEGATIVE
+disponibles,109,Available,POSITIVE
+commercial tres,109,Commercial,MIXED
+chauffeur,109,Driver,NEGATIVE
+pres,109,By,MIXED
+commander,109,Order,POSITIVE
+permis,109,Permits,MIXED
+correspondant,109,Correspondent,MIXED
+batterie,109,Battery,NEGATIVE
+trois,109,Three,NEGATIVE
+concerne,109,Concerned,MIXED
+tres tres,108,Very very,POSITIVE
+contacter,108,Contact,MIXED
+apres livraison,108,After delivery,NEGATIVE
+situation,108,Situation,NEGATIVE
+oui,108,Yes,POSITIVE
+pourquoi,107,Why?,NEGATIVE
+produit conforme,107,Compliant product,POSITIVE
+définitive,107,Final,NEGATIVE
+tres propre,106,Very clean,POSITIVE
+distance,106,Distance,MIXED
+accueil chaleureux,106,Warm welcome,POSITIVE
+fort,106,Strong,POSITIVE
+rendu,106,Rendered,NEGATIVE
+superbe,106,Beautiful.,POSITIVE
+resultat,106,Result,NEGATIVE
+cependant,106,"However,",MIXED
+comment,106,How to,POSITIVE
+lion,106,Lion,MIXED
+virginie,106,Virginia,MIXED
+gros,105,Fat,MIXED
+temps heure,105,Time hour,NEGATIVE
+coin,105,Corner,NEGATIVE
+agréables,105,Nice,MIXED
+tres bon contact,104,Very good contact,POSITIVE
+appels,104,Appeals,NEGATIVE
+garagiste,104,Garage operator,NEGATIVE
+souhaite,104,Wish,MIXED
+livrer,104,Deliver,MIXED
+voila,104,There you go.,MIXED
+plein,104,Full,POSITIVE
+venu,104,Come,MIXED
+gestion,104,Management,MIXED
+electrique,104,Electric,MIXED
+ravi,103,Nice to meet you.,POSITIVE
+réservation,103,Reservation,MIXED
+regler,103,Settle,MIXED
+cette societe,103,This company,NEGATIVE
+facon,103,The way,MIXED
+constructeur,103,Manufacturer,NEGATIVE
+petit bémol,103,Small flat,NEGATIVE
+janvier,103,January,MIXED
+tres bon suivi,102,Very good follow-up,POSITIVE
+premier contact,102,First contact,MIXED
+doute,102,Doubt,MIXED
+recupere,102,Recovery,MIXED
+tres satisfaits,102,Very satisfied,POSITIVE
+rencontre,102,Meeting,MIXED
+compétents,102,Competent,MIXED
+accueil personnel,102,Personal welcome,NEGATIVE
+tour,101,Tower,MIXED
+bien conseille,101,Good advice,POSITIVE
+surpris,101,Surprised,MIXED
+directement,101,Directly,MIXED
+fiable,101,Reliable,POSITIVE
+tout passe,101,Everything passes,MIXED
+ceux,101,These,MIXED
+devait,101,Had to,MIXED
+préparation,101,Preparation,NEGATIVE
+mai,101,May,MIXED
+seul bémol,101,Only flat,NEGATIVE
+bien passee,100,Well done.,POSITIVE
+quand meme,100,Still,MIXED
+matin,100,Morning,MIXED
+somme,100,Amount,NEGATIVE
+facilite,99,Facilitates,MIXED
+toujours ecoute,99,Always listen,POSITIVE
+hésitation,99,Hesitation,NEGATIVE
+personnel ecoute,99,Staff listening,POSITIVE
+numero,99,Number,MIXED
+malheureusement,99,Unfortunately.,NEGATIVE
+administrative,99,Administrative,MIXED
+cause,99,Cause,NEGATIVE
+compris,99,Got it.,MIXED
+disposition,99,Layout,MIXED
+chez carnet,99,At notebook,POSITIVE
+nouvelles,98,News,MIXED
+aussi bien,98,As well as,MIXED
+satisfaisante,98,Satisfactory,NEGATIVE
+evidemment,98,Of course.,MIXED
+complique,98,Complicated,MIXED
+devant,98,Front,MIXED
+informe,98,Informs,MIXED
+honnete,97,Honest,POSITIVE
+refaire,97,Redo,NEGATIVE
+rendre,97,Return,MIXED
+signaler,97,Report,MIXED
+jour livraison,97,Delivery day,MIXED
+lors achat,97,When purchased,MIXED
+faute,97,Fault,NEGATIVE
+travaux,97,Work,NEGATIVE
+signe,97,Sign,MIXED
+efficaces,96,Effective,MIXED
+vraiment tres,96,Really very,POSITIVE
+site internet,96,Website,MIXED
+quant,96,When,NEGATIVE
+recommanderai,96,Will recommend,POSITIVE
+decide,96,Decides,MIXED
+montant,96,Amount,NEGATIVE
+monde,96,World,MIXED
+longue,96,Long,NEGATIVE
+personnels,95,Staff,MIXED
+annonces,95,Announcements,NEGATIVE
+ete fait,95,Was done,MIXED
+livraison tout,95,Delivery all,MIXED
+presque,95,Almost.,MIXED
+confirme,95,Confirm,MIXED
+content achat,94,Happy purchase,POSITIVE
+heureusement,94,"Fortunately,",NEGATIVE
+tapes,94,Type,MIXED
+voiture neuve,94,New car,MIXED
+quitter,94,Leave,NEGATIVE
+option,93,Option,NEGATIVE
+periode,93,Period,NEGATIVE
+vue,93,View,MIXED
+instant,93,Moment,MIXED
+effet,93,Effect,NEGATIVE
+voiture occasion,93,Used car,MIXED
+faites,93,Do,MIXED
+coffre,93,Trunk,MIXED
+rembourser,93,Refund,NEGATIVE
+tres satisfait achat,93,Very satisfied purchase,POSITIVE
+refus,93,Refusal,NEGATIVE
+apres achat,93,After purchase,MIXED
+message,93,Message,NEGATIVE
+convenu,92,Agreed,MIXED
+photo,92,Photo,MIXED
+repondre questions,92,Answer questions,MIXED
+agréablement,92,Pleasantly,POSITIVE
+rassure,92,Reassure,MIXED
+jeune,92,Young,NEGATIVE
+suivi commande,91,Tracking order,MIXED
+facilement,91,Easily,POSITIVE
+tout ete parfait,91,Everything was perfect.,POSITIVE
+constate,91,Notes,MIXED
+recommande site,91,Recommend site,POSITIVE
+merci tous,91,Thank you all.,POSITIVE
+intervention,91,Intervention,MIXED
+article,91,article,MIXED
+allez,90,Come on.,POSITIVE
+simplement,90,Just,NEGATIVE
+comme prevu,90,As expected,MIXED
+choses,90,Things,NEGATIVE
+seule,90,Alone,NEGATIVE
+tres belle,90,Very beautiful,POSITIVE
+tres professionnels,90,Very professional,POSITIVE
+positif,90,Positive,MIXED
+nom,90,Name,NEGATIVE
+qualité prix,90,Quality price,MIXED
+achat livraison,90,Purchase delivery,POSITIVE
+tres comptent,90,Very important,POSITIVE
+interessant,90,Interesting,POSITIVE
+rennes,90,Reindeer,MIXED
+controle technique,90,Technical control,MIXED
+service livraison,89,Delivery service,MIXED
+quelques jours,89,A few days,NEGATIVE
+piece,89,Part,MIXED
+voyant,89,Seer,MIXED
+durant,89,During,NEGATIVE
+client tres,89,Customer very,POSITIVE
+notamment,89,In particular,MIXED
+pare,89,PARE,MIXED
+secretaire,89,Secretary,NEGATIVE
+courrier,89,Mail,NEGATIVE
+bon accueil tres,89,Welcome very,POSITIVE
+pouvez,88,Can,MIXED
+details,88,Details,MIXED
+bien explique,88,Well explained.,POSITIVE
+mois apres,88,Month after,MIXED
+satisfait vehicule,88,Vehicle satisfaction,MIXED
+droit,88,Law,POSITIVE
+pub,88,Advertising,NEGATIVE
+octobre,88,October,MIXED
+possession,88,Possession,POSITIVE
+choix vehicule,88,Choice of vehicle,MIXED
+stephanie,87,Stephanie.,POSITIVE
+joindre,87,Join us,MIXED
+bon etat,87,Good state,POSITIVE
+ici,87,Here,MIXED
+précises,87,Precise,MIXED
+belle experience,87,Great experience,POSITIVE
+arnaque,87,Scam,NEGATIVE
+produits,87,Products,NEGATIVE
+serviable,87,Helpful,NEGATIVE
+vehicule tout,87,Vehicle everything,NEGATIVE
+garage renaît,87,Garage reborn,POSITIVE
+sanders,87,Sanders.,POSITIVE
+bonne accueil,87,Welcome,POSITIVE
+précis,86,Precise,MIXED
+courant,86,Current,MIXED
+réceptionne,86,Received,MIXED
+refuse,86,Refuse,NEGATIVE
+souriant,86,Smiling,POSITIVE
+sympathiques,86,Friendly,POSITIVE
+technicien,86,Technician,MIXED
+been,86,♪ been ♪,MIXED
+verifier,85,Verify,POSITIVE
+tel,85,Like,MIXED
+site tres,85,Site Tres,POSITIVE
+excellente experience,85,Excellent experience,POSITIVE
+scene,85,Scene,MIXED
+irréprochable,85,Impeccable,POSITIVE
+tombe,85,Fall,NEGATIVE
+super experience,85,Great experience.,POSITIVE
+retard livraison,85,Late delivery,NEGATIVE
+présentation vehicule,85,Vehicle presentation,MIXED
+engagements,85,Commitments,MIXED
+bas,85,Low,NEGATIVE
+immediatement,85,Right away.,POSITIVE
+tres bien accueilli,85,Very well received,POSITIVE
+accueillante,85,Welcoming,MIXED
+sans aucun,85,Without any,NEGATIVE
+la,85,The,MIXED
+document,85,Document,MIXED
+achat ligne,84,Purchase line,POSITIVE
+sourire,84,Smile,POSITIVE
+bien fait,84,Well done.,POSITIVE
+cle,84,Key,MIXED
+commande vehicule,84,Vehicle control,MIXED
+prix tres,84,Prices,MIXED
+appeler,84,Call,MIXED
+tres vite,84,Very quickly.,POSITIVE
+partir,84,Leaving,MIXED
+bonheur,83,Happiness,POSITIVE
+vehicule correspond,83,Vehicle corresponds,POSITIVE
+cela fait,83,That's it.,MIXED
+vehicule ete livre,83,Vehicle and delivered,POSITIVE
+tenu,83,Held,MIXED
+comptant,83,Cash,MIXED
+accompagner,83,Accompany,MIXED
+novembre,83,November,MIXED
+oblige,83,Obliging,MIXED
+toujours ete,83,Always been,POSITIVE
+semble,83,Seems,NEGATIVE
+megan,82,Megan.,MIXED
+positive,82,Positive,MIXED
+merci tout,82,Thank you all.,POSITIVE
+peur,82,Fear,MIXED
+imperfections,82,Imperfections,NEGATIVE
+téléphoniques,82,Telephone,MIXED
+ancienne,82,Old,NEGATIVE
+cet achat,82,This purchase,MIXED
+clientèle,82,Clients,NEGATIVE
+montre,82,Show me.,POSITIVE
+date preuve,82,Date proof,MIXED
+achete chez,82,Purchased from,MIXED
+securite,82,Security,POSITIVE
+repondu toutes,81,Answer all,MIXED
+sens,81,Sense,MIXED
+actifs,81,Assets,MIXED
+projet,81,Project,NEGATIVE
+resterai,81,Will stay,NEGATIVE
+vehicule sans,81,Vehicle without,NEGATIVE
+achat tres,81,Purchase very,POSITIVE
+entourage,81,Entourage,MIXED
+qualité service,81,Quality of service,POSITIVE
+cours,81,Course,POSITIVE
+prepare,81,Prepare,MIXED
+difficile,81,Difficult,MIXED
+formalités,81,Formalities,MIXED
+samedi,81,Saturday,MIXED
+plaques,81,Plates,MIXED
+détail,80,Detail,MIXED
+ras,80,Clear.,NEGATIVE
+peine,80,Punishment,NEGATIVE
+professionnel tres,80,Professional very,POSITIVE
+vacances,80,Holidays,MIXED
+rappeler,80,Recall,POSITIVE
+sais,80,Know,MIXED
+madame,80,Madam.,NEGATIVE
+suivre,80,Follow,POSITIVE
