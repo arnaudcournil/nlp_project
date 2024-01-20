@@ -118,7 +118,7 @@ def separer_phrase(phrase):
         sous_groupes = re.split(pattern_combined, groupe)
         groupes_fins.extend(sous_groupes)
 
-    return [groupe.strip() for groupe in groupes_fins if groupe is not None and groupe.strip() and groupe.strip() not in ['.', ',', 'mais', 'ou', 'et', 'donc', 'or', 'ni', 'car']]
+    return [groupe.strip() for groupe in groupes_fins if groupe is not None and groupe.strip() and len(groupe.strip()) > 6]
 
 def estimate_score(top_docs, origin_query = None, use_bm25 = True, FIABILITY_THRESHOLD = 0.6):
     # Calculer la note moyenne des avis
@@ -157,7 +157,7 @@ def getRevelantSentences(origin_query, most_freq, documents, ratings, top=5, use
         sumFreq = sum([freq for word, freq in most_freq if word in group_tokens])
         if score >= 3.5:
             pos_list.append((groupe, sumFreq))
-        elif score <= 1.5:
+        elif score <= 2.5:
             neg_list.append((groupe, sumFreq))
 
     pos_list = [sentence[0] for sentence in sorted(pos_list, key=lambda x: x[1], reverse=True)[:top]]
@@ -221,6 +221,7 @@ def afficher_resultats(resultats):
         return None
     st.subheader("Résultats de la prédiction :")
     st.write(f"Nombre d'étoiles sur 5 : {'🌟' * round(resultats['nombre d étoile sur 5'])}")
+    st.subheader("Explication du résultat :")
     st.subheader("Liste de phrases positives :")
     for phrase in resultats["liste phrases positives"]:
         st.write(f"👍 {phrase}")
@@ -233,15 +234,15 @@ def run():
 
     avis_utilisateur = st.text_area("Entrez votre avis ici :")
 
-    if st.button("Prédiction BM 25"):
+    if st.button("Prédiction BM 25 + Régression Linéaire"):
         resultats_1 = prediction_1(avis_utilisateur)
         afficher_resultats(resultats_1)
 
-    if st.button("Prédiction Transformers"):
+    if st.button("Prédiction Transformers + Random Forest"):
         resultats_2 = prediction_2(avis_utilisateur)
         afficher_resultats(resultats_2)
 
-    if st.button("Prédiction BM 25 + Transformers"):
+    if st.button("Prédiction BM 25 + Transformers + Random Forest"):
         resultats_3 = prediction_3(avis_utilisateur)
         afficher_resultats(resultats_3)
 
