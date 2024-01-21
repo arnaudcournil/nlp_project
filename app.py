@@ -12,10 +12,10 @@ from rank_bm25 import BM25Okapi
 import streamlit as st
 import pickle
 import numpy as np
+from scipy.spatial.distance import cosine
 
 nltk.download('stopwords')
 nltk.download('punkt')
-
 
 try:
     useless_words = pd.read_csv("most_frequent_words_mixed.csv", header=None)[0].tolist()[:100]
@@ -62,17 +62,22 @@ def preprocess_text(text):
 
 n_grams = lambda tokens, n: [" ".join(tokens[i:i+n]) for i in range(len(tokens)-n+1)]
 
-def text2Token(text, spelling = True, stem = True, len_word_min = 2, spell = spell, useless_words = useless_words):
+def text2Token(text, spelling = True, stem = True, add_same_without_stem = False, len_word_min = 2, spell = spell, useless_words = useless_words, use_n_grams = True):
     stopword = stopwords.words('french')
     word_tokens = preprocess_text(text)
     word_tokens = [word for word in word_tokens if word not in stopword and word not in useless_words and len(word) > len_word_min]
     if spelling:
         word_tokens = [spell.correction(word) for word in word_tokens]
         word_tokens = [word for word in word_tokens if word != None]
+    if add_same_without_stem:
+        word_token_bis = word_tokens.copy()
     if stem:
         word_tokens = [STEMMER.stem(token) for token in word_tokens]
-    word_tokens_with_n_grams = word_tokens + n_grams(word_tokens, 2) + n_grams(word_tokens, 3)
-    return word_tokens_with_n_grams
+    if add_same_without_stem:
+        word_tokens = word_tokens + word_token_bis
+    if use_n_grams:
+        word_tokens = word_tokens + n_grams(word_tokens, 2) + n_grams(word_tokens, 3)
+    return word_tokens
 
 def getMostFrequentWords(documents, top=10):
     # Compter les mots
@@ -144,24 +149,26 @@ def getRevelantSentences(origin_query, most_freq, documents, ratings, top=5, use
     scores = []
     for groupe in groupes:
         if use_pipe and use_bm25:
-            scores.append(estimate_score(getTopDocs(bm25, text2Token(groupe), documents, ratings), origin_query))
+            scores.append(estimate_score(getTopDocs(bm25, text2Token(groupe), documents, ratings), groupe))
         elif use_pipe:
-            scores.append(estimate_score(None, origin_query, use_bm25=False))
+            scores.append(estimate_score(None, groupe, use_bm25=False))
         elif use_bm25:
             scores.append(estimate_score(getTopDocs(bm25, text2Token(groupe), documents, ratings)))
-            
+    
     pos_list = []
     neg_list = []
     for groupe, score in zip(groupes, scores):
         group_tokens = text2Token(groupe)
         sumFreq = sum([freq for word, freq in most_freq if word in group_tokens])
+        if score is None:
+            continue
         if score >= 3.5:
             pos_list.append((groupe, sumFreq))
         elif score <= 2.5:
             neg_list.append((groupe, sumFreq))
 
-    pos_list = [sentence[0] for sentence in sorted(pos_list, key=lambda x: x[1], reverse=True)[:top]]
-    neg_list = [sentence[0] for sentence in sorted(neg_list, key=lambda x: x[1], reverse=True)[:top]]
+    pos_list = [sentence[0] for sentence in pos_list[:top]]
+    neg_list = [sentence[0] for sentence in neg_list[:top]]
 
     return pos_list, neg_list
 
@@ -172,20 +179,47 @@ def main(origin_query, bm25=bm25, documents=documents, ratings=ratings, spell=sp
     if use_bm25:
         top_docs = getTopDocs(bm25, query, documents, ratings, top=5)
         most_freq = getMostFrequentWords([doc[0] for doc in top_docs], top=50)
-    pos_list, neg_list = getRevelantSentences(origin_query, most_freq, documents, ratings, top=5, use_bm25 = True, use_pipe = True)
+    pos_list, neg_list = getRevelantSentences(origin_query, most_freq, documents, ratings, top=5, use_bm25 = use_bm25, use_pipe = use_pipe)
     if not use_pipe:
         origin_query = None
-    return estimate_score(top_docs, origin_query, use_bm25=use_bm25), pos_list, neg_list
+    return estimate_score(top_docs, origin_query, use_bm25=use_bm25)[0], pos_list, neg_list
 
-"""
-Streamlit
-"""
+frequents_vectors = pd.read_csv("wordsmost_frequent_with_vectors.csv")
+frequents_vectors["embedding"] = frequents_vectors["embedding"].apply(lambda x: ast.literal_eval(re.sub(r',+', ',', x.replace(" ", ",").replace("\n", ",")).replace("[,", "[").replace(",]", "]")))
+
+def text2vector(text):
+    all_vectors = [frequents_vectors[frequents_vectors["fr"] == word].iloc[0]["embedding"] for word in text2Token(text, use_n_grams=False, add_same_without_stem=True) if word in frequents_vectors["fr"].tolist()]
+
+    return [sum([vector[i] for vector in all_vectors]) for i in range(len(all_vectors[0]))]
+
+TOPICS = [("Relatif au temps", text2vector("rapidité vitesse lenteur retard")),
+          ("Relatif à la qualité", text2vector("panne bug qualité performance")),
+          ("Relatif au prix", text2vector("cher marché prix")),
+          ("Relatif au service client", text2vector("service client"))
+          ]
+
+def getTopic(text):
+    try:
+        text_vector = text2vector(text)
+        best_topic = TOPICS[0][0]
+        best_score = 1 - cosine(TOPICS[0][1], text_vector)
+        for i in range(1, len(TOPICS)):
+            score = 1 - cosine(TOPICS[i][1], text_vector)
+            if score > best_score:
+                best_score = score
+                best_topic = TOPICS[i][0]
+        return best_topic
+    except:
+        return "Ne peut pas être déterminé"
+
+# Streamlit
 
 def prediction_1(origin_query):
     try:
         score, pos_list, neg_list = main(origin_query, use_pipe=False)
-    except:
+    except Exception as e:
         score, pos_list, neg_list = 0, [], []
+        print(e)
     return {
         "nombre d étoile sur 5": score,
         "liste phrases positives": pos_list,
@@ -195,8 +229,9 @@ def prediction_1(origin_query):
 def prediction_2(origin_query):
     try:
         score, pos_list, neg_list = main(origin_query, use_bm25=False)
-    except:
+    except Exception as e:
         score, pos_list, neg_list = 0, [], []
+        print(e)
     return {
         "nombre d étoile sur 5": score,
         "liste phrases positives": pos_list,
@@ -206,8 +241,9 @@ def prediction_2(origin_query):
 def prediction_3(origin_query):
     try:
         score, pos_list, neg_list = main(origin_query)
-    except:
+    except Exception as e:
         score, pos_list, neg_list = 0, [], []
+        print(e)
     return {
         "nombre d étoile sur 5": score,
         "liste phrases positives": pos_list,
@@ -233,6 +269,9 @@ def run():
     st.title("Analyse de sentiments pour des avis de concessionnaires automobiles")
 
     avis_utilisateur = st.text_area("Entrez votre avis ici :")
+
+    if st.button("Thème de l'avis GloVe"):
+        st.write(getTopic(avis_utilisateur))
 
     if st.button("Prédiction BM 25 + Régression Linéaire"):
         resultats_1 = prediction_1(avis_utilisateur)
